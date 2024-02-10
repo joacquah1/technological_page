@@ -1,0 +1,131 @@
+*,body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --btn-text-color:#1E1E1E;
+}
+/* Hero Section */
+.hero_img_section{
+    background-color:rgba(48, 48, 238, 0.815) ;
+    color:var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: url("../asset/Rectangle\ 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero_img_section h1{
+    margin-top: 13rem;
+    font-size: 2rem;
+    font-weight:1000;
+    line-height: 2.4rem;
+}
+.hero_img_section .hero_btn ,.primary_btn {
+    margin-top: 1.7rem;
+    margin-bottom: 4rem;
+    height: 2.8rem;
+    background-color: var(--white-color);
+    color: var(--btn-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.6rem;
+    padding: 1rem;
+    font-size: 1.12rem;
+    border-radius: 0.35rem;
+}
+.hero_text_welcome_back{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;  
+}
+.hero_welcome_back_img{
+    margin-top: 3rem;
+    width: 14rem;
+    margin-bottom: 0.9rem;
+}
+.hero_welcome_back_img img{
+    width: 100%;
+}
+.hero_text_welcome_back label{
+    display: block;
+    margin-bottom: 0.2rem;
+}
+.hero_text_welcome_back .welcome_back_login{
+    background-color: #1E1E1E;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.3rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1.3rem;
+
+}
+
+.hero_welcome_back_img + div + div{
+    margin-top: 3rem;
+}
+
+.hero_text_welcome_back .email input, .hero_text_welcome_back .password input{
+    width: 100%;
+    padding: 0.6rem 0.5rem 0.6rem 1rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--black-color);
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--black-color);
+}
+.section_2_img{
+    background-color: rgb(20, 240, 240);
+    height: 30rem;
+    width: 100%;
+}
+@media (min-width:768px) {
+    body,input,button,label{
+        font-size: 30px;
+    }
+    .hero_section{
+        display: flex;
+        flex-direction: row;
+    }
+    .hero_section >div{
+        width: 50%; 
+        height: 35.2rem;  
+    }
+    .hero_text_welcome_back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .hero_welcome_back_img{
+        width: 20rem;
+    }
+    .hero_img_section h1{
+        margin-top: 13rem;
+        font-size: 2.5rem;
+        font-weight:1000;
+        line-height: 3rem;
+    }
+}
+@media (min-width:1020px){
+    body,input,button,label{
+        font-size: 35px;
+    }
+}
